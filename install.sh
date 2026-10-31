@@ -137,7 +137,7 @@ check_port_free() {
     if systemctl is-active --quiet "$SERVICE"; then
       info "端口 $PORT 已被 sing-box 自己占用（重装场景），继续。"
     else
-      red "端口 $PORT 已被其他程序占用（多半是 Nginx/网站）。换端口重跑：PORT=8443 sudo bash install.sh，或先处理占用。"
+      red "端口 $PORT 已被其他程序占用（多半是 Nginx/网站）。换端口重跑：sudo env PORT=8443 bash install.sh（注意 PORT 要写在 sudo 后面，写前面会被 sudo 丢掉），或先处理占用。"
       exit 1
     fi
   fi
