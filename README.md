@@ -1,6 +1,6 @@
 # sing-box onekey（自用版）
 
-给 denny 自己的 VPS 舰队用的一键服务端脚本：装好就是一个
+自己用的 VPS 舰队用的一键服务端脚本：装好就是一个
 VLESS+REALITY（TCP 443）+ Hysteria2（UDP 443）双入口节点，顺带检查/开启 BBR。
 
 ## 为什么不用现成的轮子
